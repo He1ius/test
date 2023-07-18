@@ -1,0 +1,17 @@
+.catalog{
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        row-gap: 17px;
+
+        flex-wrap: wrap;
+
+        margin-bottom: 33px;
+    }
+
+    &__pagination{
+        margin-bottom: 63px;
+    }
+}

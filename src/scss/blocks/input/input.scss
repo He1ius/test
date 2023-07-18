@@ -1,0 +1,43 @@
+.input{
+    position: relative;
+
+    width: 100%;
+
+    background-color: var(--color-dark-gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: var(--transition);
+
+    &:hover{
+        background-color: var(--color-dark-gray-hover);
+    }
+
+    &__field{
+        width: 100%;
+        text-align: center;
+
+        padding: 15px 28px 14px 32px;
+    }
+
+    &__right, &__left{
+        position: absolute;
+        color: var(--color-light-gray);
+    }
+
+    &__right{
+        right: 11px;
+    }
+    &__left{
+        left: 11px;
+    }
+
+    @media(max-width:768px){
+        &__field{
+            padding: 11px 28px 12px 32px;
+            line-height: 10px;
+        }
+    }
+}

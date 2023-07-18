@@ -1,0 +1,45 @@
+// Fonts
+@import "./fonts.scss";
+
+// Bootstrap
+@import "./libs/bootstrap/functions";
+@import "./libs/bootstrap/bootstrap-grid.scss";
+@import "./libs/bootstrap/bootstrap-reboot.scss";
+
+// Blocks
+@import "./blocks/form/form.scss";
+@import "./blocks/select/select.scss";
+@import "./blocks/input/input.scss";
+@import "./blocks/button/button.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/cart/cart.scss";
+@import "./blocks/pagination/pagination.scss";
+
+// Vars
+@import "./vars.scss";
+
+body{
+    background-color: var(--color-dark-gray);
+    color: white;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    font-family: 'Gilroy';
+}
+
+.main{
+    &__form{
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 768px) {
+        &__form{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.line{
+    border: 1px solid #4B4B4B
+}
