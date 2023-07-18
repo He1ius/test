@@ -55,6 +55,10 @@
             background-color: var(--color-dark-hover);
         }
 
+        &:focus{
+            outline: 1px solid #78787880!important;
+        }
+
         &.select{
             background-color: var(--color-dark-hover);
         }
