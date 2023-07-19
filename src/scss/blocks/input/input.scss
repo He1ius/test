@@ -20,6 +20,8 @@
         text-align: center;
 
         padding: 15px 28px 14px 32px;
+
+        height: 46px;
     }
 
     &__right, &__left{
@@ -36,8 +38,15 @@
 
     @media(max-width:768px){
         &__field{
-            padding: 11px 28px 12px 32px;
+            padding: 11px 28px 11px 32px;
             line-height: 10px;
+
+            height: 40px;
         }
+
+        &__right, &__left{
+            color: var(--color-light-gray-mb);
+        }
+    
     }
 }

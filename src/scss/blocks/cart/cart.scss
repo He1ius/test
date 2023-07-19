@@ -34,20 +34,24 @@
     &__attributes{
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 7px;
+    }
+
+    &__btn{
+        margin-top: 7px;
     }
 
     &__attribute{
         color: var(--color-cart-light-gray);
         font-size: 16px;
 
-        line-height: 15px;
+        line-height: 21px;
     }
 
     &__price{
         font-size: 20px;
         font-weight: 700;
-        line-height: 30px;
+        line-height: 133%;
 
         text-align: center;
         
@@ -62,12 +66,17 @@
             background-color: var(--color-gray);
         }
 
+        &__btn{
+            margin-top: -2px;
+        }
+
         &__img{
             height: 200px;
         }
 
         &__name{
             line-height: 13px;
+            font-size: 18px;
         }
         
         &__content{
@@ -81,11 +90,13 @@
         &__attribute{
             line-height: 12px;
             font-size: 14px;
+
+            color: var(--color-light-gray-mb);
         }
 
         &__svg{
-            width: 10px;
-            height: 10px;
+            width: 16px;
+            height: 16px;
         }
 
         &__price{
