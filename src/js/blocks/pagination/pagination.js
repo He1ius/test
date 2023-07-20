@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             activeClassName: "select",
             disableClassName: "block",
             prevText: "Назад",
-            nextText: "Вперёд",
+            nextText: "Вперед",
             callback: function(data, pagination) {
                 // Обновление контейнера с элементами
                 var html = '';
