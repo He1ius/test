@@ -10,12 +10,20 @@
 
         width: 182px;
         height: 68px;
+        
     }
 
     &__name{
         font-size: 18px;
         font-weight: 700;
         line-height: 22px;
+
+        color: white;
+
+        transition: var(--transition);
+        .brands__item:hover &{
+            color: var(--color-light-gray);
+        }
     }
 
     &__items{
