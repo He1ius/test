@@ -14,6 +14,8 @@
 @import "./blocks/catalog/catalog.scss";
 @import "./blocks/cart/cart.scss";
 @import "./blocks/pagination/pagination.scss";
+@import "./blocks/brands/brands.scss";
+@import "./blocks/navigation/navigation.scss";
 
 // Vars
 @import "./vars.scss";
@@ -33,9 +35,21 @@ body{
         margin-bottom: 50px;
     }
 
+    &__brands{
+        margin-bottom: 42px;
+    }
+
+    &__navigation{
+        margin-bottom: 60px;
+    }
+
     @media (max-width: 768px) {
         &__form{
             margin-bottom: 30px;
+        }
+
+        &__brands{
+            margin-bottom: 28px;
         }
     }
 }

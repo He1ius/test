@@ -1,0 +1,47 @@
+.navigation{
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 38px;
+
+    &__ul{
+        width: 187px;
+    }
+
+    &__symbol{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+
+        margin-bottom: 16px;
+    }
+
+    &__li{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    @media (max-width:768px) {
+        &{
+            gap: 20px;
+            row-gap: 30px;
+        }
+
+        &__ul{
+            width: 155px;
+        }
+
+        &__symbol{
+            font-size: 18px;
+            line-height: 22px;
+
+            margin-bottom: 8px;
+        }
+
+        &__li{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
