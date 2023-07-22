@@ -37,7 +37,7 @@
         width: 60px;
         height: 60px;
         background-position: center;
-        background-size: contain;
+        background-size: auto;
         background-repeat: no-repeat;
     }
 
@@ -65,6 +65,12 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 18px;
+        }
+        
+        @media (max-width:767px) {
+            &__photo{
+                background-size: contain;
+            }        
         }
     }
 }

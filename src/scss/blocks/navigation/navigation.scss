@@ -5,7 +5,7 @@
     row-gap: 38px;
 
     &__ul{
-        width: 196px;
+        width: 168px;
         padding-right: 10px;
     }
 
@@ -34,7 +34,7 @@
 
     @media (max-width:768px) {
         &{
-            gap: 20px;
+            gap: 19px;
             row-gap: 30px;
         }
 
@@ -49,9 +49,21 @@
             margin-bottom: 8px;
         }
 
-        &__li{
+        &__li a{
             font-size: 14px;
             line-height: 24px;
         }
+    }
+    @media (max-width:576px) {
+        &{
+            align-items: center;
+            gap: 21px;
+        }
+
+        &__ul{
+            width: 100%;
+            flex: 46%;
+        }
+
     }
 }
