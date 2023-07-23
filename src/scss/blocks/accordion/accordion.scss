@@ -1,0 +1,40 @@
+.accordion{
+    &__container{
+        box-sizing: content-box;
+
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    
+        transition-property: max-height, opacity, padding-top, padding-bottom;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;    
+    }
+
+    .open.accordion__container{
+        opacity: 1;
+    }
+
+    &__icon{
+        transform: rotate(0deg);
+        transition: var(--transition);
+
+    }
+    .open.accordion__icon{
+        transition: var(--transition);
+        transform: rotate(180deg);
+    }
+
+    &__icon{
+        margin-left: 12px;
+    }
+
+    @media (max-width:768px) {
+        &__btn{
+            margin-top: 8px;
+        }
+        &__icon{
+            margin-left: 8px;
+        }
+    }
+}

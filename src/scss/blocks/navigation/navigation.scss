@@ -32,7 +32,29 @@
         }
     }
 
+    &__li--show-all{
+        margin-top: 5px;
+    }
+
+    &__li--show-all button{
+        font-size: 12px;
+        line-height: 24px;
+        color: var(--color-red);
+
+        transition: var(--transition);
+        &:hover{
+            color: var(--color-red-hover);
+        }
+    }
+
     @media (max-width:768px) {
+
+        &__li--show-all button{
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+
         &{
             gap: 19px;
             row-gap: 30px;
@@ -56,7 +78,6 @@
     }
     @media (max-width:576px) {
         &{
-            align-items: center;
             gap: 21px;
         }
 
